@@ -1,0 +1,554 @@
+
+
+        /* تنسيق الصفحة */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* تنسيق القائمة الجانبية */
+        .sidebar {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color:CornflowerBlue;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+          border-radius: 20px;
+            border: 1px solid black;
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color:Black;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            color: #f1f1f1;
+          background-color: blue;
+        }
+
+        .sidebar .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+        }
+
+        /* تنسيق الزر الرئيسي لفتح القائمة */
+        .openbtn {
+            font-size: 20px;
+            cursor: pointer;
+            background-color:DarkBlue;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+        }
+
+        /* تأثير تحريك المحتوى عند فتح القائمة */
+        #main {
+            transition: margin-left 0.5s;
+            padding: 16px;
+        }
+
+
+
+ ABD{
+     margin:4px; /* لإزالة الهوامش الافتراضية */
+     padding: 20px; /* لإضافة مسافة بين الإطار والمحتوى */
+     border: 5px solid black; /* تحديد الإطار بعرض 5 بكسل ولون أسود */
+     height: 100vh; /* لجعل الإطار يغطي ارتفاع الصفحة بالكامل */
+     width: 100%;
+     box-sizing: border-box;
+     position:absolute;
+     float:center;
+     background-color:red;
+     text-align: right;
+  
+}
+
+
+
+  .header {
+
+    width: 100%;
+    height: 150px;
+    border: 1px solid red;
+    background-color: lightskyblue;
+  }
+    
+
+  .sodii{position:absolute;
+    width:150px;
+    height:120px;
+    float:left;
+    margin:15px;
+    border:1px solid red;
+    border-radius:20px;
+    
+  }
+  
+  .sodii2{position:absolute;
+    width:150px;
+    height:120px;
+    margin-left:350px;
+    margin-top:10px;
+    margin-bottom:10px;
+    border:1px solid red;
+    border-radius:20px;
+  }
+  
+    .sodii3{position:absolute;
+    width:130px;
+    height:90px;
+    float:right;
+    margin-left:700px;
+    margin-top:10px;
+    margin-bottom:10px; 
+    padding:10px;
+    text-align:center;
+    font-size:15px;
+    font-weight: bold;
+    border:1px solid red;
+    border-radius:20px;
+  }
+   /*
+  
+  .sodii3{position:absolute;
+    width:13px;
+    height:10px;
+    text-align:center;
+    font-size:15px;
+    font-weight: bold;
+    float:left;
+    margin-left:300px;
+   
+    border:1px solid red;
+   
+    
+  }
+  
+  
+  */
+
+.bohead{
+  position:relative;
+  width:100%;
+  height: 80px;
+  float: left;
+  background-color:LightSkyBlue;
+  border: 2px solid red;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+.boheadins{
+  position:relative;
+  width:150px;
+  height: 40px;
+  float: right;
+  background-color:Light;
+  border: 2px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  text-align: right;
+  padding-top:10px;
+  padding-right:10px;
+  
+  
+}
+
+
+.boheadins:hover{
+  width:200px;
+  background-color:blue;
+  font-size: 20px;
+  font-weight: bold;
+  color:white;
+  
+}
+  .ns{
+    position:relatvie;
+  width:150px;
+  height: 40px;
+  float: right;
+  background-color:Light;
+  border: 2px solid red;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+  text-align: right;
+  padding-top:0px;
+  padding-right:0px;
+}
+
+
+.ns nav {
+  width:130px;
+  height: 30px;
+  text-align: right;
+  border-radius: 20px;
+  padding-top:10px;
+  padding-right:19px;
+  font-weight: bold; 
+  color: white;
+  border: 2px solid royalblue; 
+  text-align: center;
+  background-color: royalblue; 
+  
+}
+
+ .ns nav ul { display: none;
+    list-style: none; 
+    margin: 0; 
+    padding: 0; }
+   
+
+.ns nav:hover ul {display: block;
+  z-index: 4;
+  position:absolute ;
+}
+
+.ns nav ul li{
+  z-index: ;
+  width:130px;
+  height: 30px;
+  text-align: right;
+  border-radius: 20px;
+  padding-top:10px;
+  padding-right:19px;
+  font-weight: bold; 
+  color: white;
+  border: 2px solid royalblue; 
+  text-align: center;
+  background-color: royalblue;
+  border-top: 2px solid royalblue; 
+  background-color: white;
+  color: black;}
+
+.ns nav ul li:hover{
+  
+  width:130px;
+  height: 30px;
+  text-align: right;
+  border-radius: 20px;
+  padding-top:10px;
+  padding-right:19px;
+  font-weight: bold;
+  border: 2px solid royalblue; 
+  text-align: center;
+  background-color:blue;
+  border-top: 2px solid royalblue;
+  color: white;}
+
+
+
+
+
+#ee{display:none;}
+
+  
+   .lef{
+     
+     position:relatvie;
+     width:270px;
+     height:400px;
+     float:left;
+     background-color:Lightgrey;
+     border:1px solid red; 
+     border-radius:20px;
+     margin-top:20px;
+     
+    text-align:center;
+     }
+  .leff{
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+    border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left{
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+      border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  
+  
+  
+  .lef2{position:relative;
+    width:270px;
+    height:400px;
+    float:left;
+    background-color:Lightgrey;
+    border:1px solid red; 
+    border-radius:20px;
+    margin-top:20px;
+    margin-left:25px;
+    text-align:center;
+     }
+  .leff2{
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+    border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left2{
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+      border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  
+  
+  
+  
+  .lef3{position:relative;
+    z-index: 1;
+    width:270px;
+    height:400px;
+    float:left;
+    background-color:Lightgrey;
+    border:1px solid red; 
+    border-radius:20px;
+    margin-top:20px;
+    margin-left:25px;
+    
+    text-align:center;
+     }
+  .leff3{
+    z-index: 2;
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+     border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left3{
+      z-index: 3;
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+       border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  
+  
+  
+  
+  .lef4{position:relative;
+    width:270px;
+    height:400px;
+    float:left;
+    background-color:Lightgrey;
+    border:1px solid red; 
+     border-radius:20px;
+    margin-top:20px;
+   
+    text-align:center;
+     }
+  .leff4{
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+     border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left4{
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+       border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  
+  
+  
+  .lef5{position:relative;
+    width:270px;
+    height:400px;
+    float:left;
+    background-color:Lightgrey;
+    border:1px solid red; 
+     border-radius:20px;
+    margin-top:20px;
+    margin-left:25px;
+    text-align:center;
+     }
+  .leff5{
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+     border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left5{
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+       border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  
+  .lef6{position:relative;
+    width:270px;
+    height:400px;
+    float:left;
+    background-color:Lightgrey;
+    border:1px solid red; 
+     border-radius:20px;
+    margin-top:20px;
+    margin-left:25px;
+    text-align:center;
+     }
+  .leff6{
+     position:relatvie;
+     width:230px;
+     height:150px;
+     border:1px solid blue; 
+     border-radius:20px;
+     margin-top:10px;
+    margin-left:15px;
+    margin-right:10px;    
+  }
+    .left6{
+     position:relatvie;
+     width:250px;
+     height:200px;
+     border:1px solid blue; 
+       border-radius:20px;
+     margin:5px;
+   
+  }
+  
+  .footer {
+
+    position: relative;
+    width: 100%;
+    height: 300px;
+    float: left;
+    margin-top: 30px;
+    background-color: lightskyblue;
+
+}
+.dw1{
+    margin-left: 20px;
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    position:relative;
+    width:200px;
+    height:290px;
+    float:left;
+    argin:15px;
+    rder:1px solid red;
+    border-radius:20px;
+}
+.dw2{
+    
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    position:relative;
+    width:190px;
+    height:290px;
+    float:left;
+    argin:15px;
+    rder:1px solid red;
+    border-radius:20px;
+}
+.dw3{
+    
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    position:relative;
+    width:190px;
+    height:290px;
+    float:left;
+    argin:15px;
+    rder:1px solid red;
+    border-radius:20px;
+}
+
+.dw4{
+    
+    text-align: right;
+    padding-top: 10px;
+    padding-right: 15px;
+    position:relative;
+    width:190px;
+    height:290px;
+    float:left;
+    
+    rder:1px solid red;
+    border-radius:20px;
+
+
+
+/*
+
+.footerinside {
+
+
+    position: position;
+    width: 50%;
+    height: 50px;
+    float: left;
+    background-color:#ffffff;
+    margin-left: 25%;
+    margin-right: 20%;
+    margin-top: 40px;
+    border-radius: 30px;
+    padding-left: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+}*/
+
+
+

@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+*
+{
+	margin: px;
+	padding: 4px;
+	box-sizing:inherit;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body
+{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(45deg,#1b11119b  ,#c1b0b0,#ff0000);
+	/*background-color: #587a78;*/
+
+}
+.square
+{
+	position: relative;
+	width: 700px;
+	height: 900px;
+	display: flex;
+	justify-content: center;
+	
+}
+.square i
+{
+	position: absolute;
+	inset: 0;
+	border: 2px solid #7573cb;
+	transition: 0.5s;
+	/*position: absolute;
+	inset: 0;
+	border: px solid #301f1f;
+	background: linear-gradient(45deg,#000000df  ,#b6a5a5,#ff0000e6);
+
+	transition: 0.5s;*/
+}
+.square i:nth-child(1)
+{
+	border-radius: 38% 62% 6% / 41% 44% 56% 59%;
+	animation: animate 6s linear infinite;
+}
+.square i:nth-child(2)
+{
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate 4s linear infinite;
+}
+.square i:nth-child(3)
+{
+	border-radius: 41% 44% 56% 59%/38% 62% 63% 37%;
+	animation: animate2 10s linear infinite;
+}
+.square:hover i
+{
+	border: 4px solid var(--clr);
+	filter: drop-shadow(20px var(--clr));
+}
+@keyframes animate
+{
+	0%
+	{
+		transform: rotate(0deg);
+	}
+	100%
+	{
+		transform: rotate(360deg);
+	}
+}
+@keyframes animate2
+{
+	0%
+	{
+		transform: rotate(360deg);
+	}
+	100%
+	{
+		transform: rotate(0deg);
+	}
+}
+
+.login 
+{
+	position: absolute;
+	width: 300px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+.login h2 
+{
+	font-size: 40px;
+	color: #030303;
+	border: dashed;
+	
+}
+.login .inputBx 
+{
+	position: relative;
+	width: 200%;
+}
+.login .inputBx input 
+{
+	position: relative;
+	width: 100%;
+	padding: 12px 20px;
+	background: transparent;
+	border: 2px solid #fff;
+	border-radius: 40px;
+	font-size: 11,10.15px;
+	color: #000000;
+	box-shadow: none;
+	outline: none;
+}
+.login .inputBx input[type="submit"]
+{
+	width: 100%;
+	background: #a1bfe7;
+	background: linear-gradient(45deg,#0000009b  ,#fefefe,#ff0000);
+	border:medium;
+	cursor: pointer;
+}
+.login .inputBx input::placeholder 
+{
+	color: rgba(255, 255, 255, 0.75);
+}
+.login .links
+{
+	position: relative;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:0 20px;
+}
+.login .links a:hover
+{
+	margin-top: 0px;
+	position: relative;
+	background-color: rgb(121, 68, 0);
+	color: #f9f903;
+	text-decoration:dotted;
+}
